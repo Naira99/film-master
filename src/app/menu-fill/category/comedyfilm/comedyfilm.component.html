@@ -1,0 +1,124 @@
+<app-header>
+</app-header>
+<app-menu></app-menu>
+<div class="container" style="display: flex;
+    justify-content: center;">
+    <div class="row slide-content text-center">
+        <div class="  col-md-12 col-sm-12 animated fadeInUp">
+            <h3>Comedy <span style="color: #e2a750;"> Genre</span> </h3>
+
+        </div>
+    </div>
+</div>
+<div class="modal-content" *ngIf="dialog">
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+
+            <iframe src="https://www.youtube.com/embed/TPDPZRrOCzA?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<section class="header">
+    <div class="container">
+        <header>
+            <h1>Comedy Genre</h1>
+            <h4>The animation genre is defined by inanimate objects being manipulated to appear as though they are living. This can be done in many different ways and can incorporate any other genre and sub-genre on this list. </h4>
+        </header>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../../../assets/img/video_img/long.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 bg">
+                <h1>Long Shot</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium quis velit, explicabo placeat nobis inventore ipsa. Iusto eos eveniet recusandae doloribus. Fuga ullam quia unde rem debitis quidem </p>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../../../assets/img/video_img/comedy2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 bg">
+                <h1>Vacaciones</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium quis velit, explicabo placeat nobis inventore ipsa. Iusto eos eveniet recusandae doloribus. Fuga ullam quia unde rem debitis quidem </p>
+                <i class="fa fa-file-video-o" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../../../assets/img/video_img/comedy3.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 bg">
+                <h1>Isn't It Romantic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium quis velit, explicabo placeat nobis inventore ipsa. Iusto eos eveniet recusandae doloribus. Fuga ullam quia unde rem debitis quidem </p>
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </div>
+        </div>
+        <!--slider-->
+        <app-slidervideo></app-slidervideo>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../../../assets/img/video_img/conedy4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 bg">
+                <h1>MeanGirls</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium quis velit, explicabo placeat nobis inventore ipsa. Iusto eos eveniet recusandae doloribus. Fuga ullam quia unde rem debitis quidem </p>
+                <i class='fa fa-arrows-alt'></i>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../../../assets/img/video_img/latenight.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 bg">
+                <h1>Late Night</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium quis velit, explicabo placeat nobis inventore ipsa. Iusto eos eveniet recusandae doloribus. Fuga ullam quia unde rem debitis quidem </p>
+                <i class='fa fa-play'></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+<div class="modal-content" *ngIf="dialog">
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/2msJTFvhkU4?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<!-- slider2 -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+
+                <label for="s1" id="slide1"><i class="fa fa-play " (click)="open()" ></i></label>
+                <label for="s2" id="slide2"><i class="fa fa-play" (click)="open()"></i></label>
+                <label for="s3" id="slide3"><i class="fa fa-play" (click)="open()" ></i></label>
+                <label for="s4" id="slide4"><i class="fa fa-play " (click)="open()" ></i></label>
+                <label for="s5" id="slide5"><i class="fa fa-play " (click)="open()" ></i></label>
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+.film-name h3 {
+    cursor: pointer;
+}
+
+.film-name h3:hover {
+    color: #c7af6b;
+}
+
+.film-name a {
+    text-decoration: none;
+}
+
+.film-name h3,
+p {
+    color: white
+}
+
+.top-film-bg {
+    background: url('../../assets/img/bg/film.jpeg');
+    height: fit-content;
+    background-attachment: fixed;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin-bottom: -69px;
+}
+
+.top-film-bg::before {
+    background: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width:900px) {
+    iframe {
+        position: absolute;
+        z-index: 0;
+        width: 1253px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        opacity: 1;
+        user-select: none;
+        margin-top: 0px;
+        margin-left: -273px;
+        transition-property: opacity;
+        transition-duration: 1000ms;
+    }
+}
+
+.content-item .icon img {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+}
+
+.content-item .pic {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.content-item img {
+    transition: 300ms;
+}
+
+.content-item {
+    margin-bottom: 30px;
+}
+
+.content-item:hover {
+    cursor: pointer;
+}
+
+.content-item:hover .pic img {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.pic img {
+    height: 400px;
+    width: 317px;
+}
+
+.pic {
+    width: 317px
+}
+
+.content-item:hover .icon img {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+/*modal window*/
+
+.modal-content {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content iframe {
+    width: 800px;
+    height: 400px;
+}
+
+body .modal-content {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.modal-content .fa {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 240px;
+    top: 45px;
+}
+
+.iframe-video {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 17%;
+}

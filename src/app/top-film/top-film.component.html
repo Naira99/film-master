@@ -1,0 +1,171 @@
+<!--video dialog-->
+<div class="modal-content" #contentVideo1>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/nECEsjN_mOk?autoplay=1&mute=1&fs=0&loop=1&controls=0" id="iframeVideo" frameborder="0"></iframe>
+
+        </div>
+
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" #contentVideo2>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" #contentVideo3>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+
+            <iframe src="https://www.youtube.com/embed/R3b1mp21eMU?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" #contentVideo4>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+
+            <iframe src="https://www.youtube.com/embed/8uc30b4kZws?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" #contentVideo5>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+
+            <iframe src="https://www.youtube.com/embed/ASVurmP2hDo?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+
+<div class="modal-content" #contentVideo6>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/2msJTFvhkU4?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+
+
+
+<!--top film-->
+<div class="top-film-bg">
+
+    <div class="container">
+        <div class="row" style=" justify-content: center;">
+
+            <div class=" col-lg-4 col-9 col-sm-6" animateOnScroll animationName="animated fadeInLeft">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog1()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/got (1).jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <a [routerLink]="['/gameOfThrones']">
+                        <h3>Game of Thrones</h3>
+                    </a>
+                    <p>2019, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+
+            <div class=" col-lg-4 col-9 col-sm-6  " animateOnScroll animationName="animated zoomInDown">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog2()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/joker.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="['/joker']">Joker</h3>
+                    <p>2019, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+            <div class="col-lg-4 col-9 col-sm-6 " animateOnScroll animationName="animated fadeInRight">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog3()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/malificent.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="['/maleficent']">Maleficent 2</h3>
+                    <p>2019, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+        </div>
+        <div class="row " style=" justify-content: center;">
+            <div class="col-lg-4 col-9 col-sm-6" animateOnScroll animationName="animated fadeInLeft">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog4()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/skim.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="['/skin']">SKIN </h3>
+                    <p>2019, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+            <div class=" col-lg-4 col-9 col-sm-6 " animateOnScroll animationName="animated zoomInDown">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog5()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/aquaman.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="['/aquaman']">Aquaman</h3>
+                    <p>2018, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+            <div class="col-lg-4 col-9 col-sm-6 " animateOnScroll animationName="animated fadeInRight">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog6()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/doctor.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="['/doctorSleep']">DOCTOR SLEEP </h3>
+                    <p>2019, USA, Action</p>
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+        </div>
+    </div>
+
+</div>

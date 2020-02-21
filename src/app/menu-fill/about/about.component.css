@@ -1,0 +1,168 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    color: #606060;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.abt-sm-img {
+    position: absolute;
+    right: 70px;
+    z-index: 99;
+}
+
+.about-area {
+    padding: 100px 0;
+}
+
+.abt-sm-img img {
+    max-width: 100%;
+}
+
+.abt-lrg-img img {
+    max-width: 100%;
+}
+
+.about-area .section-titel-contact {
+    margin-bottom: 62px;
+}
+
+.section-titel-contact h3 {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.section-titel-contact p {
+    color: #555555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.bg-2 {
+    background: url(../../../assets/img/about-image/2.png) repeat scroll 0 0 / cover;
+}
+
+.about-area {
+    padding-top: 100px;
+    display: block;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.project-count span {
+    color: #555555;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.project-area img {
+    width: 100px
+}
+
+.project-area {
+    padding-bottom: 95px;
+    padding-top: 90px;
+}
+
+.project-count span::after {
+    background: #555555 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.project-count h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bg-3 {
+    background: url(../../../assets/img/about-image/4.png) repeat scroll 0 0 / cover;
+}
+
+.testimonial-content p {
+    padding: 0 200px;
+}
+
+.testimonial-content h6 {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 4px;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-icon .fa {
+    margin: 0px 5px;
+    padding: 7px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    color: grey;
+    border: 1px solid grey;
+    width: 32px;
+}
+
+.site-icon .fa:hover {
+    background-color: grey;
+    color: white;
+}
+
+.imageflex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    cursor: pointer;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:763px) {
+    .abt-sm-img {
+        position: initial;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:763px) {
+    .abt-lrg-img {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}

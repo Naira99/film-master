@@ -1,0 +1,88 @@
+<!--video dialog-->
+<div class="modal-content" #contentVideo1>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/kGM4uYZzfu0?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" #contentVideo2>
+
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/Kopyc23VfSw?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+
+</div>
+<div class="modal-content" #contentVideo3>
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+
+            <iframe src="https://www.youtube.com/embed/5w_B6xHGFms?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+
+
+
+
+<div class="top-film-bg">
+    <div class="container">
+        <div class="row" style=" justify-content: center;">
+            <div class=" col-lg-4 col-9 col-sm-6" animateOnScroll animationName="animated fadeInLeft">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog1()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/harlis.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="[ '/birds' ]">Birds of prey</h3>
+                    <p>2020, USA, Action</p>
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+
+            <div class=" col-lg-4 col-9 col-sm-6  " animateOnScroll animationName="animated zoomInDown">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog2()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/unnamed.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="[ '/furious' ]">FAST AND FURIOUS 9 </h3>
+                    <p>2020, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+            <div class="col-lg-4 col-9 col-sm-6 " animateOnScroll animationName="animated fadeInRight">
+                <div class="content-item">
+                    <div class="icon">
+                        <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog3()">
+                    </div>
+                    <div class="pic">
+                        <img src="../../assets/img/video_img/mulann.jpg">
+                    </div>
+                </div>
+                <div class="film-name">
+                    <h3 [routerLink]="[ '/mulan' ]">Mulan</h3>
+                    <p>2020, USA, Action</p>
+
+                </div>
+                <app-icon-star></app-icon-star>
+            </div>
+        </div>
+    </div>
+</div>

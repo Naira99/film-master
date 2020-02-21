@@ -1,0 +1,131 @@
+<app-header>
+</app-header>
+<app-menu></app-menu>
+<section class="about-area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-sm-12">
+                <div class="section-titel-contact text-left">
+                    <h3>WE ARE PROUD</h3>
+                    <p>It is a long establishedgfdg fact that a reader will be distracted by the on readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution letters, as opposed
+                        to using 'Content here, content here', making it look like readable English. </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-12">
+                <div class="abt-sm-img">
+                    <img src="../../../assets/img/about-image/about-2.png " alt="">
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="abt-lrg-img">
+                    <img src="../../../assets/img/about-image/about-1.png " alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-area  bg-2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="project-single text-center">
+                    <div class="project-count text-uppercase">
+                        <span class="counter">{{aweards}}</span>
+                        <h3>Aweards</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="project-single text-center">
+                    <div class="project-count text-uppercase">
+                        <span class="counter">{{years}}</span>
+                        <h3>Years</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="project-single text-center">
+                    <div class="project-count text-uppercase">
+                        <span class="counter">{{com}}</span>
+                        <h3>Complite Work</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="project-single text-center">
+                    <div class="project-count text-uppercase">
+                        <span class="counter">{{client}}</span>
+                        <h3>Happy Client</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class=" project-area  bg-3">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-12 " style=" margin-bottom: 18px;
+                text-align: center;">
+                    <img src="../../../assets/img/about-image/{{imageArr[i]}}.png" alt="">
+                    <div class="testimonial-content">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in randomised words which don't look even slightly believable.</p>
+                        <h6>MOMENZ VONG</h6>
+                        <span>Script Writer</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;font-size: 61px;
+                    margin-top: -96px;">
+                        <p style="font-size: 70px;" class="previous round color-dark" (click)="prev()">&#8249;</p>
+                        <p style="font-size: 70px;" class="next round color-dark" (click)="next()">&#8250;</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-titel text-left two">
+                    <h2>OUR TEAM</h2>
+                    <p>It is a long established fact that a reader will be distracted readable </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="../../../assets/img/about-image/1.png" class="image">
+            </div>
+            <div class="col-lg-6 text-right">
+                <h1 style="font-size: 20px;">mounthan khan</h1>
+                <p>film meneger</p>
+                <div class="site-icon">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+                </div>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in randomised words which don't look even slightly believable.</p>
+                <div class="imageflex">
+                    <div style="display: flex;width:100px;" *ngFor="let img of images">
+                        <img src="{{img}}" class="image">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

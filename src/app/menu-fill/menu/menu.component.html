@@ -1,0 +1,133 @@
+<div class="menu">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-4 col-md-10 col-sm-10 " style="z-index: 100;">
+                <div class="logo-img">
+                    <a href="#"><img src="../../assets/img/logo/logo.png" style="max-width:100%"></a>
+                </div>
+            </div>
+            <div class="iconMenu">
+                <i class="fa fa-bars" #opens (click)="open()"></i>
+            </div>
+            <!-- <div #closes class="iconMenu close">
+                <i class="fa fa-close" (click)="close()"></i>
+            </div> -->
+            <div class="col-lg-8 col-md-8 col-sm-12 text-right  examp">
+
+                <ul #hiddenMneu>
+                    <li> <a [routerLink]="[ '/home' ]">home</a></li>
+
+                    <li><a [routerLink]="[ '/about' ]">about</a></li>
+                    <li>
+                        <a [routerLink]="[ '/services' ]">services</a>
+                        <ul class="dropdown animated slideInUp">
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a [routerLink]="[ '/gallery' ]">gallery</a>
+                        <ul class="dropdown animated slideInUp">
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Category</a>
+                        <ul class="dropdown animated slideInUp">
+                            <li><a [routerLink]="[ '/animatedfilms' ]">Animated films</a></li>
+                            <li><a [routerLink]="[ '/historifilm' ]">Historical films</a></li>
+                            <li><a [routerLink]="[ '/dramafilm' ]">Drama film</a></li>
+                            <li><a [routerLink]="[ '/comedyfilm' ]">Comedy films </a></li>
+                            <li><a [routerLink]="[ '/fantasyfilm' ]">Fantasy films</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a [routerLink]="[ '/pages' ]">pages</a>
+                        <ul class="dropdown animated slideInUp">
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a [routerLink]="[ '/pages' ]">news</a>
+                        <ul class="dropdown animated slideInUp">
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li><a [routerLink]="[ '/contact' ]">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--mobile menu-->
+        <div class="row" *ngIf="show" (window:resize)="onResize()">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-right animated fadeInRight" style="z-index: 100;">
+                    <div class="mobile-menu">
+                        <ul>
+                            <li> <a [routerLink]="[ '/home' ]">home</a></li>
+                            <li><a [routerLink]="[ '/about' ]">about</a></li>
+                            <li>
+                                <a [routerLink]="[ '/services' ]">services</a>
+                                <button class="menu-click" (click)="btnOne()">+</button >
+                                <ul class="dropdown" #menuOne>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a [routerLink]="[ '/gallery' ]">gallery</a>
+                                <button class="menu-click" (click)="btnTwo()" >+</button>
+                                <ul class="dropdown" #menuTwo>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Category</a>
+                                <button class="menu-click" (click)="btnThree()">+</button>
+                                <ul class="dropdown" #menuThree>
+                                    <li><a [routerLink]="[ '/animatedfilms' ]">Animated films</a></li>
+                                    <li><a [routerLink]="[ '/historifilm' ]">Historical films</a></li>
+                                    <li><a [routerLink]="[ '/dramafilm' ]">Drama film</a></li>
+                                    <li><a [routerLink]="[ '/comedyfilm' ]">Comedy films </a></li>
+                                    <li><a [routerLink]="[ '/fantasyfilm' ]">Fantasy films</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a [routerLink]="[ '/pages' ]">pages</a>
+                                <button class="menu-click" (click)="btnFour()">+</button>
+                                <ul class="dropdown" #menuFour>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a [routerLink]="[ '/pages' ]">news</a>
+                                <button class="menu-click" (click)="btnFive()">+</button>
+                                <ul class="dropdown" #menuFive>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                    <li><a href="#">link</a></li>
+                                </ul>
+                            </li>
+                            <li><a [routerLink]="[ '/contact' ]">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

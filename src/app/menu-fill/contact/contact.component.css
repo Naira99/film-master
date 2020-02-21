@@ -1,0 +1,69 @@
+.add-comment {
+    margin: 200px 0px 40px;
+}
+
+.add-comment header {
+    margin-bottom: 45px;
+}
+
+mat-form-field {
+    width: 100%
+}
+
+button {
+    min-width: 240px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #d81a24;
+    border-color: #d81a24;
+    color: #ffffff;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    /* letter-spacing: 10px;
+    word-spacing: 20px;
+    font-size: 85px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*google map*/
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 428px;
+    width: 1080px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 428px;
+    width: 1080px;
+}
+
+.googlemap {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*addres*/
+
+.fa {
+    font-size: 30px;
+    padding-right: 22px;
+}
+
+.addres {
+    margin-top: 70px;
+}
+
+.media-body span {
+    color: black;
+}

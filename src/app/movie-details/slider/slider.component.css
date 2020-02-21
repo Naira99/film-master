@@ -1,0 +1,36 @@
+span {
+    color: #c7af6b;
+    margin-left: 25px;
+}
+
+.text {
+    margin-top: 130px;
+    margin-bottom: 46px;
+}
+
+header h1 {
+    color: black
+}
+
+header p {
+    color: grey
+}
+
+.carousel-inner .fa {
+    color: white;
+    font-size: 51px;
+    position: absolute;
+    bottom: 123px;
+    left: 50%;
+}
+
+.carousel-inner img {
+    width: 300px;
+    height: 300px;
+    transform: scale(1.2);
+    background-color: white!important;
+}
+
+.carousel-item {
+    margin-bottom: 20px;
+}

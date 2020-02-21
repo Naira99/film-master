@@ -1,0 +1,41 @@
+section {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 19px;
+}
+
+input {
+    padding: 10px 39px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.searchClass {
+    background: white;
+    margin-top: 39px;
+    padding: 31px 15px;
+    height: fit-content;
+}
+
+i {
+    position: absolute;
+    right: 229px;
+    height: 46px;
+    font-size: 21px;
+    top: 13px;
+}
+
+a {
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c7af6b;
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+.bg {
+    background-image: url('../../../assets/img/login/filmimage0122.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h2 {
+    position: absolute;
+    right: 232px;
+    top: 14px;
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.bg::before {
+    background: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+form {
+    width: 400px;
+    background: white;
+    padding: 46px;
+}
+
+.login-form {
+    right: 55px;
+    position: absolute;
+    top: 12%;
+}
+
+form input {
+    width: 100%
+}
+
+form label {
+    color: black;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.btn-login {
+    background-color: #e2a750;
+}
+
+.btn-register {
+    color: #e2a750;
+}

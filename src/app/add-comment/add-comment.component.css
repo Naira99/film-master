@@ -1,0 +1,56 @@
+.header-section {
+    margin-top: 90px;
+}
+
+button {
+    min-width: 240px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #d81a24;
+    border-color: #d81a24;
+    color: #ffffff;
+}
+
+.add-comment {
+    margin: 200px 0px 40px;
+}
+
+.add-comment header {
+    margin-bottom: 45px;
+}
+
+mat-form-field {
+    width: 100%
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 39px;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.icon i:nth-child(2) {
+    margin-left: 17px;
+}
+
+.person-image {
+    width: 80px;
+    height: auto;
+}
+
+.person-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.comment-body p {
+    font-size: 19px;
+    font-family: sans-serif;
+    text-shadow: 0 0 black;
+    color: black;
+}

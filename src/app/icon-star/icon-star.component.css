@@ -1,0 +1,9 @@
+.star-icon {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.star-icon .fa {
+    color: #f9be30;
+    font-size: 12px;
+}

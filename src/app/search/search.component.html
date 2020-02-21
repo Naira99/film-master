@@ -1,0 +1,11 @@
+<section>
+    <div class="input-div">
+        <input type="text" [(ngModel)]="fname" (input)="Search()" placeholder="Search...">
+        <i class="fa fa-search"></i>
+    </div>
+    <div *ngIf="searchClass" class="searchClass">
+        <div *ngFor="let film of films">
+            <a [routerLink]="['/birds']">{{film.name}}</a>
+        </div>
+    </div>
+</section>
