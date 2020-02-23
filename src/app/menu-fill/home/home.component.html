@@ -1,6 +1,5 @@
 <!-- slider1-->
 <div class="videos" *ngIf="logoActive1">
-    <app-search></app-search>
     <app-menu></app-menu>
 
     <iframe src="https://www.youtube.com/embed/xpgzmcMUv2U?autoplay=1&mute=1&fs=0&loop=1&controls=0" allow="fullscreen" scrolling="no" frameborder="0" allow="autoplay"></iframe>
@@ -38,8 +37,6 @@
 <!--slider 2-->
 <div class="videos" *ngIf="logoActive2">
     <app-menu></app-menu>
-
-
     <iframe src="https://www.youtube.com/embed/isRHlgo5FfE?autoplay=1&mute=1&fs=0&controls=0&loop=1" frameborder="0" allow="autoplay"></iframe>
     <div class="container">
         <div class="row">
@@ -95,6 +92,9 @@
         <div class="logo-dot active-logo"><img src="../../assets/img/logo/dot-active.png" *ngIf="logoActive3"></div>
     </div>
 </div>
+<app-search></app-search>
+
+<!-- about -->
 <div class="aboutHeader">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-9">
@@ -108,17 +108,15 @@
         <div class="container">
             <div class="col-12 col-md-12 col-lg-12 text-center  text-lg-center">
                 <div class="icon">
-                    <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog7()">
+                    <img src="https://seedthemes.com/i/icon-play.png" (click)="about()">
                 </div>
                 <div class="about_image">
-                    <img src="../../assets/img/video_img/1.png">
+                    <img src="../../assets/img/video_img/1.png" style="max-width: 100%;">
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 <!--top film-->
 <div class="top-film-bg">
     <header animateOnScroll animationName="animated slideInLeft">
@@ -138,6 +136,14 @@
 
 <!--modal-->
 <div class="modal-content" *ngIf="dialog">
+    <div class="row" style="justify-content: center;">
+        <div class="col-sm-12" class="iframe-video">
+            <iframe src="https://www.youtube.com/embed/kGM4uYZzfu0?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>
+        </div>
+        <i class="fa fa-close" (click)="close()"></i>
+    </div>
+</div>
+<div class="modal-content" *ngIf="aboutDialog">
     <div class="row" style="justify-content: center;">
         <div class="col-sm-12" class="iframe-video">
             <iframe src="https://www.youtube.com/embed/kGM4uYZzfu0?autoplay=1&mute=1&fs=0&loop=1&controls=0" frameborder="0"></iframe>

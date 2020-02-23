@@ -67,3 +67,19 @@ button {
 .media-body span {
     color: black;
 }
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    color: white;
+    word-spacing: 17px;
+    letter-spacing: 16px;
+}
+
+.slide-content h3 {
+    color: white;
+    font-size: 30px;
+    animation-delay: 1.2s;
+    text-transform: uppercase;
+    overflow-y: hidden;
+}

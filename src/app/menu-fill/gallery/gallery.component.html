@@ -1,7 +1,64 @@
+<app-header></app-header>
+<app-menu></app-menu>
+<div class="container">
+    <section class="row">
+        <div class="col-sm-12 col-lg-12 col-md-12 gallery text-center ">
+            <a class="imgClick" (click)="showAll()"> ALL</a>
+            <a class="imgClick" (click)="showShoot()">SHOOTING </a>
+            <a class="imgClick" (click)="showProd()">PRODUCTION</a>
+        </div>
+    </section>
 
 
+    <section *ngIf="all" class="row" style="margin-top: 45px;">
+        <div class="col-md-6" style="margin-right: 18px;">
+            <img src="../../../assets/img/news/111.png" alt="">
+            <img src="../../../assets/img/news/55.png" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="../../../assets/img/news/33.png" alt="">
+        </div>
+    </section>
 
+    <section *ngIf="shoot" class="row" style="margin-top: 45px;">
+        <div class="col-md-6" style="margin-right: 18px;">
+            <img src="../../../assets/img/news/55.png">
+        </div>
+        <div class="col-md-"><img src="../../../assets/img/news/3.png"></div>
 
+        <div class="col-md-4">
+            <img src="../../../assets/img/news/2.png">
+        </div>
+        <div class="col-md-6">
+            <img src="../../../assets/img/news/111.png">
+        </div>
+    </section>
+    <section *ngIf="prod" class="row" style="margin-top: 45px;">
+        <div class="col-md-4">
+            <img src="../../../assets/img/news/5.png">
+        </div>
+        <div class="col-md-4">
+            <img src="../../../assets/img/news/2.png">
+        </div>
+        <div class="col-md-4">
+            <img src="../../../assets/img/news/1.png">
+        </div>
+    </section>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ea tenetur explicabo, reprehenderit magni adipisci dignissimos nesciunt animi assumenda impedit nostrum atque quidem dolore quas deserunt mollitia, voluptates facilis hic.Obcaecati
+        nulla voluptatibus ad aliquam aliquid cum rem pariatur alias non distinctio minus ullam autem cumque cupiditate, explicabo incidunt quo nisi delectus, repellat natus velit! Placeat atque in sint a?</p>
 
+    <section class="row" style="justify-content: center;">
+        <div class="col-sm-12 col-md-12 col-9">
+            <ul id="slides">
+                <li class="slide showing"> </li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+    </section>
+</div>
 
+<app-footer></app-footer>

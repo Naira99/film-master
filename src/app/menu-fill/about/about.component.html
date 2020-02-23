@@ -25,10 +25,9 @@
     </div>
 </section>
 
-<section class="project-area  bg-2">
+<section class="project-area  bg-2" animateOnScroll animationName="animated fadeInLeft">
     <div class="container">
         <div class="row">
-
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="project-single text-center">
                     <div class="project-count text-uppercase">
@@ -73,10 +72,9 @@
     <div class=" project-area  bg-3">
         <div class="container">
             <div class="row text-center">
-
                 <div class="col-md-12 " style=" margin-bottom: 18px;
                 text-align: center;">
-                    <img src="../../../assets/img/about-image/{{imageArr[i]}}.png" alt="">
+                    <img src="../../../assets/img/about-image/{{imageArr[i]}}.png">
                     <div class="testimonial-content">
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in randomised words which don't look even slightly believable.</p>
                         <h6>MOMENZ VONG</h6>
@@ -109,7 +107,7 @@
                 <img src="../../../assets/img/about-image/1.png" class="image">
             </div>
             <div class="col-lg-6 text-right">
-                <h1 style="font-size: 20px;">mounthan khan</h1>
+                <h1 style="font-size: 20px;"></h1>
                 <p>film meneger</p>
                 <div class="site-icon">
                     <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
@@ -120,8 +118,7 @@
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in randomised words which don't look even slightly believable.</p>
                 <div class="imageflex">
                     <div style="display: flex;width:100px;" *ngFor="let img of images">
-                        <img src="{{img}}" class="image">
-
+                        <img src="{{img}}" class="images" (click)="imageClick(img)">
                     </div>
                 </div>
             </div>

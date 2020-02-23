@@ -1,8 +1,12 @@
+* {
+    color: white
+}
+
 section {
     position: absolute;
     z-index: 10;
     right: 0;
-    top: 19px;
+    top: 100%;
 }
 
 input {
@@ -10,10 +14,11 @@ input {
     border-radius: 50px;
     outline: none;
     border: none;
+    background: black;
 }
 
 .searchClass {
-    background: white;
+    background: black;
     margin-top: 39px;
     padding: 31px 15px;
     height: fit-content;
@@ -31,7 +36,7 @@ a {
     font-size: 18px;
     font-family: sans-serif;
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

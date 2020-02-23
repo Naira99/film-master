@@ -30,11 +30,7 @@
                     </li>
                     <li>
                         <a [routerLink]="[ '/gallery' ]">gallery</a>
-                        <ul class="dropdown animated slideInUp">
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                        </ul>
+
                     </li>
                     <li>
                         <a>Category</a>
@@ -44,24 +40,19 @@
                             <li><a [routerLink]="[ '/dramafilm' ]">Drama film</a></li>
                             <li><a [routerLink]="[ '/comedyfilm' ]">Comedy films </a></li>
                             <li><a [routerLink]="[ '/fantasyfilm' ]">Fantasy films</a></li>
-
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a [routerLink]="[ '/pages' ]">pages</a>
                         <ul class="dropdown animated slideInUp">
                             <li><a href="#">link</a></li>
                             <li><a href="#">link</a></li>
                             <li><a href="#">link</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
-                        <a [routerLink]="[ '/pages' ]">news</a>
-                        <ul class="dropdown animated slideInUp">
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                        </ul>
+                        <a [routerLink]="[ '/news' ]">news</a>
+
                     </li>
                     <li><a [routerLink]="[ '/contact' ]">contact</a></li>
                 </ul>
@@ -77,22 +68,9 @@
                             <li><a [routerLink]="[ '/about' ]">about</a></li>
                             <li>
                                 <a [routerLink]="[ '/services' ]">services</a>
-                                <button class="menu-click" (click)="btnOne()">+</button >
-                                <ul class="dropdown" #menuOne>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
                             </li>
                             <li>
                                 <a [routerLink]="[ '/gallery' ]">gallery</a>
-                                <button class="menu-click" (click)="btnTwo()" >+</button>
-                                <ul class="dropdown" #menuTwo>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
                             </li>
                             <li>
                                 <a>Category</a>
@@ -107,21 +85,11 @@
                             </li>
                             <li>
                                 <a [routerLink]="[ '/pages' ]">pages</a>
-                                <button class="menu-click" (click)="btnFour()">+</button>
-                                <ul class="dropdown" #menuFour>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
+
                             </li>
                             <li>
-                                <a [routerLink]="[ '/pages' ]">news</a>
-                                <button class="menu-click" (click)="btnFive()">+</button>
-                                <ul class="dropdown" #menuFive>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                </ul>
+                                <a [routerLink]="[ '/news' ]">news</a>
+
                             </li>
                             <li><a [routerLink]="[ '/contact' ]">contact</a></li>
                         </ul>

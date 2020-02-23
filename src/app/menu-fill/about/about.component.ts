@@ -8,7 +8,7 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 export class AboutComponent implements OnInit, AfterViewInit {
 
   imageArr = ['testi-1', 'testi-2'];
-  i: number = 0;
+
 
 
 
@@ -19,6 +19,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     '../../../assets/img/about-image/44.png',
   ];
 
+  i: number = 0;
 
 
   aweards: number = 0;
@@ -34,7 +35,6 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   }
 
-
   ngOnInit() {
     setInterval(() => {
       if (this.aweards !== 122) {
@@ -46,17 +46,17 @@ export class AboutComponent implements OnInit, AfterViewInit {
     }, 20);
   }
 
-
-
-  next() {
-    for (var i = 1; i < this.imageArr.length; i++) {
-      this.i = i;
-    }
+  imageClick(url) {
+    this.elementRef.nativeElement.querySelector('.image').src = url;
   }
-
   prev() {
-    for (var i = 1; i < this.imageArr.length; i++) {
-      this.i = i;
-    }
+    this.goToslide(this.i - 1);
   }
+  next() {
+    this.goToslide(this.i + 1);
+  }
+  goToslide(n) {
+    this.i = (n + this.imageArr.length) % this.imageArr.length;
+  }
+
 }

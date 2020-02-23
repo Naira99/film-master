@@ -10,6 +10,7 @@ import { LoginComponent } from './login-registr/login/login.component';
 import { RegistrComponent } from './login-registr/registr/registr.component';
 import { AboutComponent } from './menu-fill/about/about.component';
 import { ContactComponent } from './menu-fill/contact/contact.component';
+import { GalleryComponent } from './menu-fill/gallery/gallery.component';
 import { HomeComponent } from './menu-fill/home/home.component';
 import { NewsComponent } from './menu-fill/news/news.component';
 import { BirdsComponent } from './movie-details/birds/birds.component';
@@ -131,6 +132,10 @@ const routes: Routes = [
   {
     path: 'news',
     component: NewsComponent
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
   },
   {
     path: 'login',

@@ -21,9 +21,10 @@
     .about_image {
         box-sizing: border-box;
         display: inline-block;
-        height: 300px;
+        height: auto;
         overflow: hidden;
-        width: 970px;
+        width: 100%;
+        max-width: 100%;
         margin-bottom: 70px;
     }
     
@@ -33,6 +34,11 @@
     
     .about header {
         margin-top: 60px;
+    }
+    
+    .about .about_image {
+        width: 100%;
+        max-width: 100%;
     }
     
     button {
@@ -554,5 +560,14 @@
         }
         to {
             transform: rotateY(360deg);
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        .about .icon img {
+            width: 35px;
+        }
+        .about .icon {
+            top: 95px;
         }
     }

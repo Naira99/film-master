@@ -1,0 +1,88 @@
+ a {
+     margin-right: 35px;
+ }
+ 
+ a:hover {
+     color: red;
+     cursor: pointer;
+ }
+ 
+ img {
+     margin-bottom: 25px
+ }
+ 
+ .gallery {
+     margin-top: 60px;
+ }
+ /*slider*/
+ 
+ #slides {
+     position: relative;
+     /* padding: 0px;
+     margin: 0px; */
+     list-style-type: none;
+     height: 350px;
+     width: 700px;
+ }
+ 
+ .slide {
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     z-index: 1;
+     -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+     -o-transition: opacity 1s;
+     transition: opacity 1s;
+ }
+ 
+ .showing {
+     opacity: 1;
+     z-index: 2;
+ }
+ 
+ .slide {
+     font-size: 40px;
+     padding: 40px;
+     box-sizing: border-box;
+     background: #333;
+     color: #fff;
+ }
+ 
+ .slide:nth-of-type(1) {
+     background: url(../../../assets/img/video_img/Doctor-Sleep-2.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+ }
+ 
+ .slide:nth-of-type(2) {
+     background: url(../../../assets/img/video_img/22.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+ }
+ 
+ .slide:nth-of-type(3) {
+     background: url(../../../assets/img/video_img/skin_video.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+ }
+ 
+ .slide:nth-of-type(4) {
+     background: url(../../../assets/img/video_img/malificent_video.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+ }
+ 
+ .slide:nth-of-type(5) {
+     background: url(../../../assets/img/video_img/mulan_video.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+ }

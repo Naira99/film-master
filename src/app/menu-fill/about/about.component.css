@@ -166,3 +166,7 @@ img {
         margin-top: 40px;
     }
 }
+
+.active {
+    border: 2px solid #cac6b8;
+}

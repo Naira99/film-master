@@ -1,0 +1,48 @@
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.separator {
+    height: 4px;
+    background: thistle;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 70px 0;
+    font-family: sans-serif;
+    color: tan;
+}
+
+img {
+    margin-bottom: 50px;
+}
+
+p {
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.images img {
+    margin-bottom: 5px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    color: white;
+    word-spacing: 17px;
+    letter-spacing: 16px;
+}
+
+.slide-content h3 {
+    color: white;
+    font-size: 30px;
+    animation-delay: 1.2s;
+    text-transform: uppercase;
+    overflow-y: hidden;
+}
