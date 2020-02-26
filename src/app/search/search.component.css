@@ -1,20 +1,12 @@
 * {
-    color: white
+    color: white;
 }
 
 section {
     position: absolute;
     z-index: 10;
-    right: 0;
-    top: 100%;
-}
-
-input {
-    padding: 10px 39px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    background: black;
+    right: 35px;
+    top: 10px;
 }
 
 .searchClass {
@@ -25,22 +17,73 @@ input {
 }
 
 i {
+    color: black!important;
     position: absolute;
-    right: 229px;
+    right: 23px;
     height: 46px;
     font-size: 21px;
     top: 13px;
 }
 
 a {
-    font-size: 18px;
-    font-family: sans-serif;
-    cursor: pointer;
-    color: white;
+    color: #69C;
     text-decoration: none;
+}
+
+h1 {
+    font: 1.7em;
+    line-height: 110%;
+    color: #000;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+input {
+    outline: none;
+}
+
+input[type=search] {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input[type=search] {
+    /* background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center; */
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    /* width: 55px; */
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
 a:hover {
     color: #c7af6b;
     text-decoration: none;
+}
+
+input[type=search] {
+    width: 60px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+
+input[type=search]:hover {
+    background-color: #fff;
+}
+
+input[type=search]:focus {
+    width: 200px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
 }

@@ -56,17 +56,13 @@ export class HomeComponent implements OnInit {
   }
 
   dialog: boolean = false;
-  aboutDialog: boolean = false
   close() {
     this.dialog = !this.dialog;
   }
   open() {
     this.dialog = !this.dialog;
+  }
 
-  }
-  about() {
-    this.aboutDialog = !this.aboutDialog;
-  }
   ngOnInit() {
   }
 

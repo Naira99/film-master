@@ -22,41 +22,40 @@ export class SearchComponent implements OnInit {
   loadfilms() {
     this.films = [
       {
-        "name": "birds of prey",
-        "link": "joker",
+        name: "birds of prey",
+        link: "birds",
       },
       {
-        "name": "joker",
-        "link": "maleficent",
+      name: "joker",
+        link: "joker",
       },
       {
-        "name": "malificent",
-        "link": "maleficent",
+        name: "malificent",
+        link: "maleficent",
       },
       {
-        "name": "aquaman",
-        "link": "maleficent",
+        name: "aquaman",
+        link: "aquaman",
       },
       {
-        "name": "skin",
-        "link": "maleficent",
+        name: "skin",
+        link: "skin",
       },
       {
-        "name": "mulan",
-        "link": "maleficent",
+        name: "mulan",
+        link: "mulan",
       },
       {
-        "name": "furious",
-        "link": "maleficent",
-      }
-      ,
-      {
-        "name": "Game of Thrones",
-        "link": "maleficent",
+        name: "furious",
+        link: "furious",
       },
       {
-        "name": "doctor sleep",
-        "link": "maleficent",
+        name: "Game of Thrones",
+        link: "gameOfThrones",
+      },
+      {
+        name: "doctor sleep",
+        link: "doctorSleep",
       },
     ];
   }

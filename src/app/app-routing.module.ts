@@ -27,6 +27,7 @@ import { ComedyfilmComponent } from './menu-fill/category/comedyfilm/comedyfilm.
 import { ExpfilmComponent } from './menu-fill/category/expfilm/expfilm.component';
 import { FantasyfilmComponent } from './menu-fill/category/fantasyfilm/fantasyfilm.component';
 import { HistorifilmComponent } from './menu-fill/category/historifilm/historifilm.component';
+import { ServicesComponent } from './menu-fill/services/services.component';
 
 
 
@@ -169,6 +170,9 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent
+  }, {
+    path: 'service',
+    component: ServicesComponent
   },
   {
     path: '**',

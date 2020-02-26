@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+
+import { Photo } from '../model/Phote';
+import { Service } from '../service/service';
 
 @Component({
   selector: 'app-top-film',
@@ -17,40 +19,58 @@ export class TopFilmComponent implements OnInit {
 
   closeVideo: boolean;
 
+
+
+  constructor(private service: Service) { }
+
+  images: Photo[];
   ngOnInit() {
+    this.service.getPhoto().subscribe((img) => {
+      this.images = img;
+    })
   }
 
-  constructor() { }
 
-close() {
-  this.contentVideo1.nativeElement.style.display = 'none';
-  this.contentVideo2.nativeElement.style.display = 'none';
-  this.contentVideo3.nativeElement.style.display = 'none';
-  this.contentVideo4.nativeElement.style.display = 'none';
-  this.contentVideo5.nativeElement.style.display = 'none';
-  this.contentVideo6.nativeElement.style.display = 'none';
 
-}
-openDialog1() {
-  this.contentVideo1.nativeElement.style.display = 'block';
-  this.closeVideo = true;
-}
 
-openDialog2() {
-  this.contentVideo2.nativeElement.style.display = 'block';
-}
-openDialog3() {
-  this.contentVideo3.nativeElement.style.display = 'block';
-}
-openDialog4() {
-  this.contentVideo4.nativeElement.style.display = 'block';
-}
-openDialog5() {
-  this.contentVideo5.nativeElement.style.display = 'block';
-}
-openDialog6() {
-  this.contentVideo6.nativeElement.style.display = 'block';
-}
+
+
+
+
+
+
+
+
+
+  close() {
+    this.contentVideo1.nativeElement.style.display = 'none';
+    this.contentVideo2.nativeElement.style.display = 'none';
+    this.contentVideo3.nativeElement.style.display = 'none';
+    this.contentVideo4.nativeElement.style.display = 'none';
+    this.contentVideo5.nativeElement.style.display = 'none';
+    this.contentVideo6.nativeElement.style.display = 'none';
+
+  }
+  openDialog1() {
+    this.contentVideo1.nativeElement.style.display = 'block';
+    this.closeVideo = true;
+  }
+
+  openDialog2() {
+    this.contentVideo2.nativeElement.style.display = 'block';
+  }
+  openDialog3() {
+    this.contentVideo3.nativeElement.style.display = 'block';
+  }
+  openDialog4() {
+    this.contentVideo4.nativeElement.style.display = 'block';
+  }
+  openDialog5() {
+    this.contentVideo5.nativeElement.style.display = 'block';
+  }
+  openDialog6() {
+    this.contentVideo6.nativeElement.style.display = 'block';
+  }
 
 
 }

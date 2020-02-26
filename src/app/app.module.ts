@@ -9,7 +9,9 @@ import {
   MatSidenavModule,
   MatDialogModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatCardModule,
+  MatButtonModule
 } from '@angular/material';
 
 import { NgImageSliderModule } from 'ng-image-slider';
@@ -129,7 +131,9 @@ import { SlidervideoComponent } from './menu-fill/category/slidervideo/slidervid
     MatDialogModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

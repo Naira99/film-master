@@ -13,20 +13,12 @@
                 <i class="fa fa-close" (click)="close()"></i>
             </div> -->
             <div class="col-lg-8 col-md-8 col-sm-12 text-right  examp">
-
                 <ul #hiddenMneu>
                     <li> <a [routerLink]="[ '/home' ]">home</a></li>
 
                     <li><a [routerLink]="[ '/about' ]">about</a></li>
                     <li>
-                        <a [routerLink]="[ '/services' ]">services</a>
-                        <ul class="dropdown animated slideInUp">
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-
-                        </ul>
+                        <a [routerLink]="[ '/service' ]">services</a>
                     </li>
                     <li>
                         <a [routerLink]="[ '/gallery' ]">gallery</a>
@@ -42,18 +34,7 @@
                             <li><a [routerLink]="[ '/fantasyfilm' ]">Fantasy films</a></li>
                         </ul>
                     </li>
-                    <!-- <li>
-                        <a [routerLink]="[ '/pages' ]">pages</a>
-                        <ul class="dropdown animated slideInUp">
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                            <li><a href="#">link</a></li>
-                        </ul>
-                    </li> -->
-                    <li>
-                        <a [routerLink]="[ '/news' ]">news</a>
-
-                    </li>
+                    <li><a [routerLink]="[ '/news' ]">news</a></li>
                     <li><a [routerLink]="[ '/contact' ]">contact</a></li>
                 </ul>
             </div>
@@ -67,7 +48,7 @@
                             <li> <a [routerLink]="[ '/home' ]">home</a></li>
                             <li><a [routerLink]="[ '/about' ]">about</a></li>
                             <li>
-                                <a [routerLink]="[ '/services' ]">services</a>
+                                <a [routerLink]="[ '/service' ]">services</a>
                             </li>
                             <li>
                                 <a [routerLink]="[ '/gallery' ]">gallery</a>
@@ -85,11 +66,9 @@
                             </li>
                             <li>
                                 <a [routerLink]="[ '/pages' ]">pages</a>
-
                             </li>
                             <li>
                                 <a [routerLink]="[ '/news' ]">news</a>
-
                             </li>
                             <li><a [routerLink]="[ '/contact' ]">contact</a></li>
                         </ul>

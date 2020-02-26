@@ -56,22 +56,18 @@
         <i class="fa fa-close" (click)="close()"></i>
     </div>
 </div>
-
-
-
 <!--top film-->
 <div class="top-film-bg">
-
     <div class="container">
         <div class="row" style=" justify-content: center;">
-
             <div class=" col-lg-4 col-9 col-sm-12 col-md-6" animateOnScroll animationName="animated fadeInLeft">
                 <div class="content-item">
                     <div class="icon">
                         <img src="https://seedthemes.com/i/icon-play.png" (click)="openDialog1()">
                     </div>
-                    <div class="pic">
-                        <img src="../../assets/img/video_img/got (1).jpg">
+                    <div class="pic" *ngFor="let img of images | slice:3:4">
+                        <img src="{{img.url}}" alt="">
+                        <!-- <img src="../../assets/img/video_img/got (1).jpg"> -->
                     </div>
                 </div>
                 <div class="film-name">

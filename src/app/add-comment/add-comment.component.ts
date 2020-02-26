@@ -29,7 +29,6 @@ export class AddCommentComponent implements OnInit {
   /*post method*/
 
   id: number;
-
   comment: Comment[];
   image: Photo[];
   temp: Comment[];
