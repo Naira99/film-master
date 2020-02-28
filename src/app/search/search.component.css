@@ -10,14 +10,14 @@ section {
 }
 
 .searchClass {
-    background: black;
+    background: white;
     margin-top: 39px;
     padding: 31px 15px;
     height: fit-content;
 }
 
 i {
-    color: black!important;
+    color: #c7af6b;
     position: absolute;
     right: 23px;
     height: 46px;
@@ -26,38 +26,27 @@ i {
 }
 
 a {
-    color: #69C;
+    color: black;
     text-decoration: none;
-}
-
-h1 {
-    font: 1.7em;
-    line-height: 110%;
-    color: #000;
-}
-
-p {
-    margin: 0 0 20px;
 }
 
 input {
     outline: none;
 }
 
-input[type=search] {
+input[type=text] {
     font-family: inherit;
     font-size: 100%;
 }
 
-input[type=search] {
-    /* background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center; */
+input[type=text] {
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
     /* width: 55px; */
     transition: all .5s;
 }
 
-input[type=search]:focus {
+input[type=text]:focus {
     width: 130px;
     background-color: #fff;
     border-color: #66CC75;
@@ -69,18 +58,17 @@ a:hover {
     text-decoration: none;
 }
 
-input[type=search] {
-    width: 60px;
+input[type=text] {
     padding-left: 10px;
     color: transparent;
     cursor: pointer;
 }
 
-input[type=search]:hover {
+input[type=text]:hover {
     background-color: #fff;
 }
 
-input[type=search]:focus {
+input[type=text]:focus {
     width: 200px;
     padding-left: 32px;
     color: #000;

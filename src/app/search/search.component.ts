@@ -10,7 +10,7 @@ import { SearchService } from './search.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
+  search: boolean = false;
   films: Film[] = [];
   searchClass: boolean = false;
   constructor(private searchService: SearchService) { }
@@ -26,7 +26,7 @@ export class SearchComponent implements OnInit {
         link: "birds",
       },
       {
-      name: "joker",
+        name: "joker",
         link: "joker",
       },
       {
@@ -80,8 +80,9 @@ export class SearchComponent implements OnInit {
     }
 
   }
-
-
+  searchBtn() {
+    this.search = !this.search;
+  }
 
 
 }

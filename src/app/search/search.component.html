@@ -1,7 +1,9 @@
 <section>
     <div class="input-div">
-        <input type="search" [(ngModel)]="fname" (input)="Search()" placeholder="">
-        <i class="fa fa-search"></i>
+
+        <input type="text" [(ngModel)]="fname" (input)="Search()" placeholder="Search..." *ngIf="search">
+        <i class="fa fa-search" (click)="searchBtn()"></i>
+
     </div>
     <div *ngIf="searchClass" class="searchClass">
         <div *ngFor="let film of films">
@@ -9,8 +11,3 @@
         </div>
     </div>
 </section>
-
-
-<!-- <form id="demo-2">
-    <input type="search" placeholder="Search">
-</form> -->

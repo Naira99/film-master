@@ -37,7 +37,6 @@ import { GalleryComponent } from './menu-fill/gallery/gallery.component';
 import { HomeComponent } from './menu-fill/home/home.component';
 import { MenuComponent } from './menu-fill/menu/menu.component';
 import { NewsComponent } from './menu-fill/news/news.component';
-import { PagesComponent } from './menu-fill/pages/pages.component';
 import { ServicesComponent } from './menu-fill/services/services.component';
 import { BirdsComponent } from './movie-details/birds/birds.component';
 import { FuriousComponent } from './movie-details/furious/furious.component';
@@ -67,7 +66,6 @@ import { SlidervideoComponent } from './menu-fill/category/slidervideo/slidervid
     ServicesComponent,
     GalleryComponent,
     NewsComponent,
-    PagesComponent,
     ContactComponent,
 
     NewFilmComponent,

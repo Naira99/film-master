@@ -2,6 +2,22 @@
      margin-right: 35px;
  }
 
+ .slide-content {
+     position: absolute;
+     top: 50%;
+     color: white;
+     word-spacing: 17px;
+     letter-spacing: 16px;
+ }
+
+ .slide-content h3 {
+     color: white;
+     font-size: 30px;
+     animation-delay: 1.2s;
+     text-transform: uppercase;
+     overflow-y: hidden;
+ }
+
  a:hover {
      color: red;
      cursor: pointer;
@@ -71,4 +87,10 @@
      background-repeat: no-repeat;
      background-position: center;
      height: 100%;
+ }
+
+ @media screen and (max-width:600px) {
+     .slide-content span {
+         font-size: 30px;
+     }
  }

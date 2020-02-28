@@ -5,6 +5,6 @@ export interface Movie {
   rating?: any;
   title?: string;
   view?: number;
-  year: number;
+  year?: number;
   image_id?: number;
 }

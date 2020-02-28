@@ -110,10 +110,6 @@ h6 {
     background: url(../../../assets/img/about-image/4.png) repeat scroll 0 0 / cover;
 }
 
-.testimonial-content p {
-    padding: 0 200px;
-}
-
 .testimonial-content h6 {
     color: #666666;
     font-size: 14px;
@@ -169,4 +165,26 @@ img {
 
 .active {
     border: 2px solid #cac6b8;
+}
+
+@media screen and (max-width:600px) {
+    .slide-content span {
+        font-size: 30px;
+    }
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    color: white;
+    word-spacing: 17px;
+    letter-spacing: 16px;
+}
+
+.slide-content h3 {
+    color: white;
+    font-size: 30px;
+    animation-delay: 1.2s;
+    text-transform: uppercase;
+    overflow-y: hidden;
 }

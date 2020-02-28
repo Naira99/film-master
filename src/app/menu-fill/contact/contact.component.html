@@ -1,5 +1,6 @@
 <app-header></app-header>
 <app-menu></app-menu>
+<app-search></app-search>
 <div class="container" style="display: flex;
     justify-content: center;">
     <div class="row slide-content text-center">
@@ -17,33 +18,29 @@
     </div>
     <!--add your contact-->
     <section class="add-comment">
-        <form [formGroup]="userDetals" class="row row-10" style="justify-content: center;">
+        <form [formGroup]="contactDetals" class="row row-10" style="justify-content: center;">
             <div class="col-12 col-md-6">
                 <mat-form-field appearance="outline">
                     <mat-label>Your first name</mat-label>
-                    <input matInput placeholder="Your first name ..." formControlName="name">
-                    <mat-hint>Hint</mat-hint>
+                    <input matInput placeholder="Your first name ..." formControlName="firstname">
                 </mat-form-field>
             </div>
             <div class="col-12 col-md-6">
                 <mat-form-field appearance="outline">
-                    <mat-label>Your e-mail</mat-label>
-                    <input matInput placeholder="Your e-mail..." formControlName="email">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Your last name</mat-label>
+                    <input matInput placeholder="Your last name..." formControlName="lastname">
                 </mat-form-field>
             </div>
             <div class="col-12 col-md-6">
                 <mat-form-field appearance="outline">
-                    <mat-label>Your first name</mat-label>
-                    <input matInput placeholder="Your first name ..." formControlName="name">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Your email</mat-label>
+                    <input matInput placeholder="Your email ..." formControlName="email">
                 </mat-form-field>
             </div>
             <div class="col-12 col-md-6">
                 <mat-form-field appearance="outline">
-                    <mat-label>Your e-mail</mat-label>
-                    <input matInput placeholder="Your e-mail..." formControlName="email">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Your phone</mat-label>
+                    <input matInput placeholder="Your phone..." formControlName="phone">
                 </mat-form-field>
             </div>
             <div class="col-md-12 col-12">

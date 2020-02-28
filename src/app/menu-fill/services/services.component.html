@@ -1,6 +1,14 @@
 <app-header></app-header>
 <app-menu></app-menu>
-
+<app-search></app-search>
+<div class="container" style="display: flex;
+    justify-content: center;">
+    <div class="row slide-content text-center">
+        <div class="  col-md-12 col-sm-12 animated fadeInUp">
+            <h3><span style="color: #e2a750;">SERVICE</span> </h3>
+        </div>
+    </div>
+</div>
 <div class="modal-content" *ngIf="dialog">
     <div class="row" style="justify-content: center;">
         <div class="col-sm-12" class="iframe-video">
@@ -10,16 +18,13 @@
     </div>
 </div>
 
-
-
-
-<div class="container">
+<div class="container" style="margin-top: 90px;">
     <header>
         <h1>LATEST TRAILER</h1>
         <p>It is a long established fact that a reader will be distracted readable</p>
     </header>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" animateOnScroll animationName="animated zoomInDown">
             <mat-card class="example-card">
                 <mat-card-header>
                 </mat-card-header>
@@ -29,11 +34,10 @@
                         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
                     </p>
                 </mat-card-content>
-
             </mat-card>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" animateOnScroll animationName="animated zoomInDown">
             <mat-card class="example-card">
                 <mat-card-header>
                 </mat-card-header>
@@ -46,7 +50,7 @@
             </mat-card>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" animateOnScroll animationName="animated zoomInDown">
             <mat-card class="example-card">
                 <mat-card-header>
 
@@ -62,49 +66,52 @@
         </div>
     </div>
 </div>
-<div class="service">
-    <div class="bgImage">
-        <div class="container">
-            <h1 style="color: white;">SERVICES</h1>
-            <div class="row">
-                <div class="col-sm-12 col-12 col-lg-12 col-md-12">
-                    <div class="servis-flex">
-                        <div class="service-single text-center" animateOnScroll animationName="animated slideInRight">
-                            <div class="icon-service">
-                                <i class='fa fa-arrows-alt'></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
-                        <div class="service-single text-center" animateOnScroll animationName="animated slideInRight">
-                            <div class="icon-service">
-                                <i class='fa fa-play'></i>
-                            </div>
-                            <div class="service-content ">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
-                        <div class="service-single text-center " animateOnScroll animationName="animated slideInRight">
 
-                            <div class="icon-service ">
-                                <i class='fa fa-pause'></i>
-                            </div>
-                            <div class="service-content ">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
+<div class="bgImage">
+    <h1 style="color: white;">SERVICES</h1>
+    <div class="container" style="padding-top: 36px;" animateOnScroll animationName="animated zoomInDown">
+
+        <div class="row" style="justify-content: center;width: 61%;">
+
+            <div class="" id="slides">
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service">
+                        <i class='fa fa-arrows-alt'></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p>passages of Lorem Ipsum available, but the majority</p>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service">
+                        <i class='fa fa-play'></i>
+                    </div>
+                    <div class="service-content ">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                    </div>
+                </div>
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service ">
+                        <i class='fa fa-pause'></i>
+                    </div>
+                    <div class="service-content ">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p> Lorem Ipsum available, but the majority</p>
+                    </div>
+                </div>
 
+            </div>
+
+        </div>
+        <div class="btn">
+            <button (click)="prev()">&#8249;</button>
+            <button (click)="next()">&#8250;</button>
+        </div>
     </div>
 </div>
-<div class="container" style="margin-top: 80px;">
+<div class="container" style="margin-top: 80px;" animateOnScroll animationName="animated zoomInDown">
     <div class="row">
         <div class="col-md-4">
             <mat-card class="example-card">
@@ -129,10 +136,8 @@
                         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
                     </p>
                 </mat-card-content>
-
             </mat-card>
         </div>
-
         <div class="col-md-4">
             <mat-card class="example-card">
                 <mat-card-header>
@@ -146,8 +151,6 @@
             </mat-card>
         </div>
     </div>
-
-
     <!-- about -->
     <div class="aboutHeader">
         <div class="row">
@@ -159,7 +162,7 @@
             </div>
         </div>
         <div class="row about" animateOnScroll animationName="animated zoomIn">
-            <div class="container">
+            <div class="container" style="margin-top: 46px;">
                 <div class="col-12 col-md-12 col-lg-12 text-center  text-lg-center">
                     <div class="icon">
                         <img src="https://seedthemes.com/i/icon-play.png" (click)="open()">
@@ -171,7 +174,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" animateOnScroll animationName="animated zoomInDown">
         <div class="row">
             <div class="col-md-4">
                 <mat-card class="example-card">
@@ -183,10 +186,8 @@
                             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
                         </p>
                     </mat-card-content>
-
                 </mat-card>
             </div>
-
             <div class="col-md-4">
                 <mat-card class="example-card">
                     <mat-card-header>

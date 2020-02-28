@@ -2,11 +2,12 @@
 <div class="videos" *ngIf="logoActive1">
     <app-menu></app-menu>
 
+
     <iframe src="https://www.youtube.com/embed/xpgzmcMUv2U?autoplay=1&mute=1&fs=0&loop=1&controls=0" allow="fullscreen" scrolling="no" frameborder="0" allow="autoplay"></iframe>
 
     <div class="container">
         <div class="row">
-            <div class="slide-content text-center col-lg-12 col-md-12 col-sm-12 animated fadeInUp">
+            <div class="slide-content text-center col-lg-12 col-md-12 col-sm-12 col-12 animated fadeInUp">
                 <h1>WAR OF OUR <span>SOULS</span></h1>
             </div>
         </div>
@@ -100,10 +101,12 @@
             <span> WATCH </span> MOVIES ONLINE</h1>
     </header>
     <div class="row" style="padding: 90px 0;">
-        <!-- class="activeBtn" -->
+        <!-- activeBtn" -->
+
         <div><button (click)="topFilm()">Top Rated</button></div>
         <div><button (click)="newFilm()">New Releases</button></div>
         <div><button (click)="comingFilm()">Coming Soom</button></div>
+
     </div>
 </div>
 <router-outlet></router-outlet>
@@ -164,46 +167,46 @@
 <app-slidervideo></app-slidervideo>
 
 <!--service-->
-<div class="service">
-    <div class="bgImage">
-        <div class="container">
-            <h1 style="color: white;">SERVICES</h1>
-            <div class="row">
-                <div class="col-sm-12 col-12 col-lg-12 col-md-12">
-                    <div class="servis-flex">
-                        <div class="service-single text-center" animateOnScroll animationName="animated slideInRight">
-                            <div class="icon-service">
-                                <i class='fa fa-arrows-alt'></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
-                        <div class="service-single text-center" animateOnScroll animationName="animated slideInRight">
-                            <div class="icon-service">
-                                <i class='fa fa-play'></i>
-                            </div>
-                            <div class="service-content ">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
-                        <div class="service-single text-center " animateOnScroll animationName="animated slideInRight">
+<div class="bgImage">
+    <h1 style="color: white;">SERVICES</h1>
+    <div class="container" style="height: 400px;">
 
-                            <div class="icon-service ">
-                                <i class='fa fa-pause'></i>
-                            </div>
-                            <div class="service-content ">
-                                <h4>EQUIPMENT HIRE</h4>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            </div>
-                        </div>
+        <div class="row" style="justify-content: center;width: 61%;">
+
+            <div class="" id="slides">
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service">
+                        <i class='fa fa-arrows-alt'></i>
+                    </div>
+                    <div class="service-content">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p>passages of Lorem Ipsum available, but the majority</p>
+                    </div>
+                </div>
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service">
+                        <i class='fa fa-play'></i>
+                    </div>
+                    <div class="service-content ">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                    </div>
+                </div>
+                <div class="col-md-12 service-single text-center slide " animateOnScroll animationName="animated slideInRight">
+                    <div class="icon-service ">
+                        <i class='fa fa-pause'></i>
+                    </div>
+                    <div class="service-content ">
+                        <h4>EQUIPMENT HIRE</h4>
+                        <p> Lorem Ipsum available, but the majority</p>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="btns">
+            <button (click)="prev()">&#8249;</button>
+            <button (click)="next()">&#8250;</button>
+        </div>
     </div>
 </div>
 
@@ -223,7 +226,7 @@
                     <h2 class="pr-text">JOKER</h2>
                     <div class="grid">
                         <figure class="effect-layla">
-                            <img src="../../../assets/img/video_img/joker.jpg" alt="img06" />
+                            <img src="../../../assets/img/video_img/joker.jpg" animateOnScroll animationName="animated fadeInRight" />
                             <figcaption>
                                 <p>When Layla appears, she brings an eternal summer along.</p>
                                 <a href="#">View more</a>
@@ -245,7 +248,7 @@
                     <h2 class="pr-text">PARAZITE</h2>
                     <div class="grid">
                         <figure class="effect-layla">
-                            <img src="../../../assets/img/video_img/8.jpg" alt="img06" />
+                            <img src="../../../assets/img/video_img/8.jpg" animateOnScroll animationName="animated fadeInLeft" />
                             <figcaption>
                                 <p>When Layla appears, she brings an eternal summer along.</p>
                                 <a href="#">View more</a>
@@ -266,7 +269,7 @@
                     <h2 class="pr-text">MULAN</h2>
                     <div class="grid">
                         <figure class="effect-layla">
-                            <img src="../../../assets/img/video_img/mulan.jpg" alt="img06" />
+                            <img src="../../../assets/img/video_img/mulan.jpg" animateOnScroll animationName="animated fadeInRight" />
                             <figcaption>
                                 <p>When Layla appears, she brings an eternal summer along.</p>
                                 <a href="#">View more</a>
@@ -286,7 +289,7 @@
                     <h2 class="pr-text">FURIOUS 9</h2>
                     <div class="grid">
                         <figure class="effect-layla">
-                            <img src="../../../assets/img/video_img/6.jpg" alt="img06" />
+                            <img src="../../../assets/img/video_img/6.jpg" animateOnScroll animationName="animated fadeInLeft" />
                             <figcaption>
                                 <p>When Layla appears, she brings an eternal summer along.</p>
                                 <a href="#">View more</a>
